@@ -7,18 +7,17 @@ import lost_found
 import buy_sell
 import notices
 import academic_resources
-import contacts
-import gymkhana
+import college_contacts
 import opportunities
-# import chatbot
+import chatbot
 
 st.sidebar.title("🏫 Campus Sarthi")
 section = st.sidebar.radio(
     "Navigate",
     [
         "Mess Menu", "Class Schedule", "Lost & Found", "Buy & Sell",
-        "Notices / Events", "Academic Resources", "Faculty/Office Contacts",
-        "Gymkhana Contacts", "Opportunities & Updates", "Chatbot"
+        "Notices / Events", "Academic Resources", "College Contacts"
+        , "Opportunities & Updates", "Chatbot"
     ]
 )
 
@@ -40,11 +39,8 @@ elif section == "Notices / Events":
 elif section == "Academic Resources":
     academic_resources.show()
 
-elif section == "Faculty/Office Contacts":
-    contacts.show()
-
-elif section == "Gymkhana Contacts":
-    gymkhana.show()
+elif section == "College Contacts":
+    college_contacts.show()
 
 elif section == "Opportunities & Updates":
     opportunities.show()
