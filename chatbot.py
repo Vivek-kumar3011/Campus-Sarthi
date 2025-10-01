@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+# Assuming class_data.py is present with CLASS_SCHEDULE_DATA, ALL_DAYS, FACULTY_LIST
 from class_data import CLASS_SCHEDULE_DATA, ALL_DAYS, FACULTY_LIST
 
 # --- Helper Functions ---
@@ -35,7 +36,7 @@ def show_schedule(filter_container):
     st.markdown("Use the **sidebar filters** to view class schedules by **Branch/Semester** and **Day**.")
 
     # --- CONDITIONAL SIDEBAR FILTERS ---
-    # The filter container is st.sidebar itself, passed from show()
+    # The filter container is the placeholder, passed from show()
     with filter_container: 
         st.header("Filter Options")
         
@@ -62,11 +63,11 @@ def show_schedule(filter_container):
         
         st.markdown("---")
     
-    # --- CONTENT DISPLAY (Rest of the show_schedule function) ---
+    # --- CONTENT DISPLAY ---
     branch_schedule = CLASS_SCHEDULE_DATA.get(selected_branch, {})
 
     st.header(f"Schedule for **{selected_branch}** on **{selected_day}**")
-    
+
     display_schedule = branch_schedule.get(selected_day, [])
     
     if display_schedule:
@@ -93,7 +94,6 @@ def show_schedule(filter_container):
 def show_chatbot_feature(filter_container):
     """Renders the Chatbot feature interface."""
     
-    # 1. Clear the placeholder container for filters
     filter_container.empty()
     
     st.header("🤖 Campus Chatbot")
@@ -122,19 +122,19 @@ def show_chatbot_feature(filter_container):
             response = "Lost something? Post it in **Lost & Found** section."
         elif "sell" in q_lower or "buy" in q_lower or "cycle" in q_lower:
              response = """
-            🚲 **Selling or Buying Items:**
-            The best way is to use the **Buy & Sell** feature. Create a listing there with photos, price, and contact details.
-            """
+        🚲 **Selling or Buying Items:**
+        The best way is to use the **Buy & Sell** feature. Create a listing there with photos, price, and contact details.
+        """
         elif "ragging" in q_lower or "help" in q_lower:
              response = """
-            🚨 **Anti-Ragging Helpline:** +91-1800-180-5522 (National)
-            For campus issues, contact the Anti-Ragging Squad directly (check the **College Contacts** section).
-            """
+        🚨 **Anti-Ragging Helpline:** +91-1800-180-5522 (National)
+        For campus issues, contact the Anti-Ragging Squad directly (check the **College Contacts** section).
+        """
         elif "pyq" in q_lower or "previous year question" in q_lower:
              response = """
-            📚 **Accessing PYQs (Previous Year Questions):**
-            PYQs are available through the **Academic Resources** section. Look for the "Question Papers" section or check the drive links shared by your course coordinator.
-            """
+        📚 **Accessing PYQs (Previous Year Questions):**
+        PYQs are available through the **Academic Resources** section. Look for the "Question Papers" section or check the drive links shared by your course coordinator.
+        """
         elif "teacher" in q_lower or "professor" in q_lower:
             response = "Teacher contacts are available in **College Contacts** section."
         elif "secretary" in q_lower or "gymkhana" in q_lower:
@@ -179,22 +179,17 @@ def show():
     # 1. Main Navigation (Draws the App Title and Feature list once)
     selected_feature = draw_sidebar_navigation()
     
-    # 2. Create a placeholder container for dynamic sidebar content (filters/etc)
+    # 2. Create a placeholder for dynamic sidebar content (filters/etc)
     # This must be *after* the permanent navigation is drawn.
-    filter_container = st.sidebar.empty() 
+    filter_placeholder = st.sidebar.empty()
     
     # 3. Display Content based on selection
     if selected_feature == "Class Schedule":
-        # Pass the sidebar object directly so filters can be rendered inside it
-        show_schedule(st.sidebar) 
-        
+        show_schedule(filter_placeholder) 
     elif selected_feature == "Chatbot":
-        # Pass the empty container to show_chatbot_feature so it can be cleared
-        show_chatbot_feature(filter_container)
-        
+        show_chatbot_feature(filter_placeholder)
     else:
-        # All other features are generic placeholders and need the container cleared
-        show_generic_feature(selected_feature, filter_container)
+        show_generic_feature(selected_feature, filter_placeholder)
 
 if __name__ == "__main__":
     st.set_page_config(

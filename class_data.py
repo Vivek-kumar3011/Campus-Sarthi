@@ -10,42 +10,56 @@ CLASS_SCHEDULE_DATA = {
     "B.Tech 1st Sem Sec A": {
         "MON": [],  # Confirmed: No class on Monday for 1st Sem Sec A
         "TUE": [
-            {"time": "9:00-10:00", "course": "CS 101", "room": "NAB", "faculty": "SKD"},
-            {"time": "10:00-11:00", "course": "PH 101", "room": "NAB", "faculty": "AB"},
+            {"time": "10:10-12:50", "course": "ECC 111", "room": "(203, 206)", "faculty": "SAS"},
+            {"time": "2:15-4:00", "course": "MAC 101", "room": "302", "faculty": "AL"},
         ],
         "WED": [
-            {"time": "11:01-12:55", "course": "PH 191 (P)", "room": "Lab 1", "faculty": "SKD"},
-            {"time": "2:15-3:05", "course": "MA 101", "room": "NAB", "faculty": "SR"},
+            {"time": "9:15-10:05", "course": "ECC 101", "room": "G01", "faculty": "SAS"},
+            {"time": "10:10-12:50", "course": "CSC 111", "room": "(201,202,207)", "faculty": "SP"},
+            {"time": "3:10-4:00", "course": "CSC 101", "room": "G01", "faculty": "SP"},
         ],
         "THU": [
-            {"time": "10:00-11:00", "course": "CS 101", "room": "NAB", "faculty": "SKD"},
-            {"time": "1:25-2:15", "course": "MA 101", "room": "NAB", "faculty": "SR"},
+            {"time": "9:15-11:00", "course": "ECC 101", "room": "G01", "faculty": "SAS"},
+            {"time": "11:05-12:50", "course": "MAC 101", "room": "G01", "faculty": "(PB,AL)"},
+            {"time": "2:15-4:00", "course": "PHC 101", "room": "G01", "faculty": "UD"},
         ],
         "FRI": [
-            {"time": "9:00-10:00", "course": "PH 101", "room": "NAB", "faculty": "AB"},
-            {"time": "12:00-12:50", "course": "MA 101", "room": "NAB", "faculty": "SR"},
+            {"time": "9:15-11:00", "course": "CSC 101", "room": "G01", "faculty": "SP"},
+            {"time": "11:05-12:50", "course": "PHC 101", "room": "G01", "faculty": "UD"},
         ],
-        "SAT": [],
+        "SAT": [
+            {"time": "9:15-11:00", "course": "HUC 101", "room": "G01", "faculty": "SB"},
+            {"time": "11:05-12:50", "course": "HUC 102", "room": "G01", "faculty": "RK"},
+            {"time": "2:15-3:05", "course": "HUC 101", "room": "G01", "faculty": "SB"},
+            {"time": "3:10-4:00", "course": "HUC 102", "room": "G01", "faculty": "RK"},
+        ],
     },
     "B.Tech 1st Sem Sec B": {
         "MON": [],  # Confirmed: No class on Monday for 1st Sem Sec B
         "TUE": [
-            {"time": "1:25-2:15", "course": "PH 101", "room": "NAB", "faculty": "AB"},
-            {"time": "2:15-3:05", "course": "CS 101", "room": "NAB", "faculty": "SKD"},
+            {"time": "10:10-12:50", "course": "CSC 111", "room": "(201,202,207)", "faculty": "BB"},
+            {"time": "2:15-4:55", "course": "ECC 111", "room": "(203,206)", "faculty": "SAS"},
         ],
         "WED": [
-            {"time": "9:00-10:00", "course": "MA 101", "room": "NAB", "faculty": "SR"},
-            {"time": "10:00-11:00", "course": "PH 101", "room": "NAB", "faculty": "AB"},
+            {"time": "10:10-11:00", "course": "ECC 101", "room": "G02", "faculty": "SAS"},
+            {"time": "11:05-12:50", "course": "PHC 101", "room": "G02", "faculty": "UD"},
+            {"time": "2:15-3:05", "course": "CSC 101", "room": "G01", "faculty": "BB"},
         ],
         "THU": [
-            {"time": "11:01-12:55", "course": "CS 191 (P)", "room": "Lab 2", "faculty": "SKD"},
-            {"time": "3:05-4:05", "course": "CS 101", "room": "NAB", "faculty": "SKD"},
+            {"time": "9:15-11:00", "course": "CSC 101", "room": "G02", "faculty": "BB"},
+            {"time": "11:05-12:50", "course": "ECC 101", "room": "G02", "faculty": "SAS"},
+            {"time": "3:10-4:55", "course": "MAC 101", "room": "G02", "faculty": "(PB,AL)"},
         ],
         "FRI": [
-            {"time": "10:00-11:00", "course": "MA 101", "room": "NAB", "faculty": "SR"},
-            {"time": "11:01-12:55", "course": "PH 191 (P)", "room": "Lab 1", "faculty": "AB"},
+            {"time": "9:15-11:00", "course": "PHC 101", "room": "G02", "faculty": "UD"},
+            {"time": "11:05-12:50", "course": "MAC 101", "room": "G02", "faculty": "AL"},
         ],
-        "SAT": [],
+        "SAT": [
+            {"time": "9:15-11:00", "course": "HUC 102", "room": "G02", "faculty": "RK"},
+            {"time": "11:05-12:50", "course": "HUC 101", "room": "G02", "faculty": "SB"},
+            {"time": "2:15-3:05", "course": "HUC 102", "room": "G02", "faculty": "RK"},
+            {"time": "3:10-4:00", "course": "HUC 101", "room": "G02", "faculty": "SB"},
+        ],
     },
 
     # ----------------------------------------------------------------------
@@ -53,55 +67,53 @@ CLASS_SCHEDULE_DATA = {
     # ----------------------------------------------------------------------
     "B.Tech 3rd Sem CSE": {
         "MON": [
-            {"time": "10:00-11:00", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
-            {"time": "11:01-12:55", "course": "CS2 303 (P)", "room": "CR03", "faculty": "SWA"},
-            {"time": "4:15-5:05", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
+            {"time": "11:05-12:50", "course": "CSC 303", "room": "302", "faculty": "SCH"},
+            {"time": "2:15-3:05", "course": "CSC 313", "room": "(201,202,207)", "faculty": "(MS/MD,IM)"},
         ],
         "TUE": [
-            {"time": "10:00-11:00", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
-            {"time": "11:01-12:55", "course": "CS2 303 (P)", "room": "CR03", "faculty": "SWA"},
-            {"time": "1:25-2:15", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
+            {"time": "9:15-11:00", "course": "CSC 301", "room": "G01", "faculty": "SMA"},
+            {"time": "11:05-12:50", "course": "HUC 301", "room": "G01", "faculty": "SRC"},
+            {"time": "2:15-3:05", "course": "HUC 301", "room": "G01", "faculty": "SRC"},
+            {"time": "3:10-4:55", "course": "MAC 301", "room": "G01", "faculty": "(ND,SUM)"},
         ],
         "WED": [
-            {"time": "1:25-2:15", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
-            {"time": "3:05-4:05", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
+            {"time": "10:10-11:00", "course": "CSC 302", "room": "G01", "faculty": "DB"},
+            {"time": "11:05-4:05", "course": "MAC 301", "room": "G01", "faculty": "SUM"},
+            {"time": "2:15-4:55", "course": "CSC 312", "room": "(201,202,207)", "faculty": "(SPK/NG,DB)"},
         ],
         "THU": [
-            {"time": "9:00-10:00", "course": "HS 301", "room": "CR02", "faculty": "KC"},
-            {"time": "10:00-11:00", "course": "HS 301", "room": "CR02", "faculty": "KC"},
-            {"time": "12:00-12:50", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
+            {"time": "10:10-12:50", "course": "CSC 311", "room": "(201,202,207)", "faculty": "(AD/DKN,MD)"},
+            {"time": "2:15-4:00", "course": "CSC 302", "room": "302", "faculty": "DB"},
+            {"time": "4:05-5:50", "course": "CSC 303", "room": "302", "faculty": "SCH"},
         ],
         "FRI": [
-            {"time": "1:25-2:15", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
-            {"time": "2:15-3:05", "course": "CS 305", "room": "NAB", "faculty": "GMS"},
-            {"time": "3:05-4:05", "course": "CS 305", "room": "NAB", "faculty": "GMS"},
+            {"time": "2:15-3:05", "course": "CSC 302", "room": "G02", "faculty": "DB"},
+            {"time": "3:10-4:00", "course": "CSC 301", "room": "G02", "faculty": "SMA"},
         ],
         "SAT": [],
     },
     "B.Tech 3rd Sem ECE": {
         "MON": [
-            {"time": "10:00-11:00", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
-            {"time": "11:01-12:55", "course": "CS2 303 (P)", "room": "CR03", "faculty": "SWA"},
-            {"time": "4:15-5:05", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
+            {"time": "9:15-11:00", "course": "MAC 301", "room": "G01", "faculty": "(ND,SUM)"},
+            {"time": "11:05-12:50", "course": "ECC 301", "room": "305", "faculty": "PC"},
         ],
         "TUE": [
-            {"time": "10:00-11:00", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
-            {"time": "11:01-12:55", "course": "CS2 303 (P)", "room": "CR03", "faculty": "SWA"},
-            {"time": "1:25-2:15", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
+            {"time": "10:10-11:00", "course": "HUC 301", "room": "G02", "faculty": "SRC"},
+            {"time": "11:05-12:50", "course": "CSC 301", "room": "GO2", "faculty": "SMA"},
+            {"time": "3:10-4:55", "course": "HUC 301", "room": "G02", "faculty": "SRC"},
         ],
         "WED": [
-            {"time": "1:25-2:15", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
-            {"time": "3:05-4:05", "course": "CS2 301", "room": "NAB", "faculty": "KR"},
+            {"time": "10:10-12:50", "course": "ECC 312", "room": "(203,G05)", "faculty": "RS"},
+            {"time": "2:15-4:00", "course": "ECC 302", "room": "402", "faculty": "SPA"},
         ],
         "THU": [
-            {"time": "9:00-10:00", "course": "HS 301", "room": "CR02", "faculty": "KC"},
-            {"time": "10:00-11:00", "course": "HS 301", "room": "CR02", "faculty": "KC"},
-            {"time": "12:00-12:50", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
+            {"time": "11:05-12:50", "course": "ECC 301", "room": "302", "faculty": "PC"},
+            {"time": "2:15-4:55", "course": "CSC 311", "room": "(201,207)", "faculty": "(AD/DKN,MD)"},
         ],
         "FRI": [
-            {"time": "1:25-2:15", "course": "MA2 201", "room": "CR02", "faculty": "SUM"},
-            {"time": "2:15-3:05", "course": "CS 305", "room": "NAB", "faculty": "GMS"},
-            {"time": "3:05-4:05", "course": "CS 305", "room": "NAB", "faculty": "GMS"},
+            {"time": "10:10-11:55", "course": "MAC 301", "room": "302", "faculty": "SUM"},
+            {"time": "2:15-4:00", "course": "ECC 302", "room": "305", "faculty": "SPA"},
+            {"time": "4:05-4:55", "course": "CSC 301", "room": "G02", "faculty": "SMA"},
         ],
         "SAT": [],
     },
@@ -158,7 +170,6 @@ CLASS_SCHEDULE_DATA = {
         "SAT": [],
     },
     
-    # M.Tech and B.Tech 2nd Sem (CSE/ECE) are removed as requested.
 }
 
 
