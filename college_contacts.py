@@ -11,10 +11,12 @@ def show():
     st.subheader("🏢 Office Contacts")
 
     office_data = [
-        {"Name": "Prof. Santanu Chattopadhyay (Director)", "Email": "director@iiitkalyani.ac.in"},
-        {"Name": "Registrar", "Email": "registrar@iiitkalyani.ac.in"},
-        {"Name": "Asst. Registrar", "Email": "asstregistrar@iiitkalyani.ac.in"},
-        {"Name": "Finance Officer", "Email": "finance@iiitkalyani.ac.in"}
+        {"Office": "IIIT Kalyani Office", "Email": "office@iiitkalyani.ac.in"},
+        {"Office": "Director(Prof. Santanu Chattopadhyay)", "Email": "director@iiitkalyani.ac.in"},
+        {"Office": "Registrar(Dr.Kaoushik K Mukherjee)", "Email": "Registrar@iiitkalyani.ac.in"},
+        {"Office": "Assistant Registrar(Dr.Madhumita Sengupta)", "Email": "madhumita@iiitkalyani.ac.in"},
+        {"Office": "Academics", "Email": "examination@iiitkalyani.ac.in"},
+        {"Office": "Finance Office", "Email": "payments@iiitkalyani.ac.in"},
     ]
     office_df = pd.DataFrame(office_data)
     office_df["Email"] = office_df["Email"].apply(make_clickable)
@@ -77,6 +79,6 @@ def show():
     # -------------------- Anti Ragging --------------------
     st.subheader("🚨 Anti-Ragging Helpline")
     st.markdown("""
-    📧 Email: <a href="mailto:antiragging@iiitkalyani.ac.in">antiragging@iiitkalyani.ac.in</a><br>
+    📧 Email: <a href="mailto:helpline@antiragging.in">helpline@antiragging.in</a><br>
     📞 Contact: +91-1800-180-5522
     """, unsafe_allow_html=True)
