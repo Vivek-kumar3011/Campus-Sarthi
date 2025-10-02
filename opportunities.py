@@ -75,7 +75,7 @@ def show():
             if pd.notna(row['Banner']) and row['Banner'].strip() != "":
                 banner_path = f"{BANNERS_DIR}/{row['Banner']}"
                 if os.path.exists(banner_path):
-                    st.image(banner_path, caption=row['Banner'], use_container_width=True)
+                    st.image(banner_path, caption=row['Banner'], use_column_width=True)
             st.markdown("---")
 
         # -----------------------------
