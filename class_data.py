@@ -248,6 +248,7 @@ FACULTY_LIST = {
 }
 
 GUEST_FACULTY_LIST = {
+    "RB": "Prof. Rabindranath Bera",
     "DD": "Dr.Debasish Dutta", "FU": "Dr.Furquan Uddin", "RK": "Dr.Rasheed K", "SAS": "Mr.Sabyasachi Sen",
     "SMA": "Mr.Sukanta Mazumdar", "MD": "Ms.Mukta Debnath", "SB": "Mrs.Shweta Basu", "SRC": "Ms.Sreyoshi Roy Chowdhury",
 }

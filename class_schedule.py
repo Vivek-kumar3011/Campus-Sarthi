@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-from class_data import CLASS_SCHEDULE_DATA, ALL_DAYS, FACULTY_LIST
+from class_data import CLASS_SCHEDULE_DATA, ALL_DAYS, FACULTY_LIST, GUEST_FACULTY_LIST, Research_Scholar
 
 def show():
     """Renders the Streamlit dashboard for class schedule management."""
@@ -39,6 +39,12 @@ def show():
 
     st.markdown("---")
 
+    # --- Merge all faculty sources ---
+    all_faculties = {}
+    all_faculties.update(FACULTY_LIST)
+    all_faculties.update(GUEST_FACULTY_LIST)
+    all_faculties.update(Research_Scholar)
+
     # --- Show Schedule only if branch is selected ---
     if selected_branch != "-- Select --":
         st.header(f"Schedule for **{selected_branch}** on **{selected_day}**")
@@ -52,10 +58,13 @@ def show():
             # Rename columns
             df.columns = ["Time Slot", "Course Code", "Room", "Faculty Code"]
 
-            # Map Faculty Code → Faculty Name
-            df['Faculty Name'] = df['Faculty Code'].apply(
-                lambda x: FACULTY_LIST.get(x.split(',')[0].strip(), x)
-            )
+            # Faculty Code → Faculty Name (handle multiple codes like "PB,AL")
+            def map_faculty_codes(code_str):
+                codes = [c.strip() for c in code_str.replace("(", "").replace(")", "").split(",")]
+                names = [all_faculties.get(c, c) for c in codes if c]
+                return ", ".join(names)
+
+            df['Faculty Name'] = df['Faculty Code'].apply(map_faculty_codes)
 
             st.dataframe(
                 df[["Time Slot", "Course Code", "Room", "Faculty Name", "Faculty Code"]],
@@ -72,14 +81,9 @@ def show():
 
     # --- Permanent Faculty Code Reference Table ---
     st.subheader("📌 Faculty Code Reference")
-    faculty_df = pd.DataFrame(FACULTY_LIST.items(), columns=["Code", "Faculty Name"])
+    faculty_df = pd.DataFrame(all_faculties.items(), columns=["Code", "Faculty Name"])
     st.dataframe(faculty_df, use_container_width=True, hide_index=True)
 
 
 if __name__ == "__main__":
-    st.set_page_config(
-        page_title="IIITK Class Schedule App",
-        layout="wide",
-        initial_sidebar_state="collapsed"
-    )
     show()
