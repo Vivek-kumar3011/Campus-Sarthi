@@ -10,28 +10,23 @@ import academic_resources
 import college_contacts
 import opportunities
 import chatbot
+import task
 
 st.sidebar.title("🏫 Campus Sarthi")
 section = st.sidebar.radio(
     "Navigate",
     [
-        "Mess Menu", "Class Schedule", "Lost & Found", "Buy & Sell",
-        "Notices / Events", "Academic Resources", "College Contacts"
-        , "Opportunities & Updates", "Chatbot"
+        "Mess Menu", "Class Schedule", "Notices / Events", "Academic Resources",
+        "Opportunities", "College Contacts", "Task Manager",
+        "Lost & Found", "Buy & Sell", "Chatbot" 
     ]
 )
 
-if section == "Mess Menu":
-    mess.show()
-
-elif section == "Class Schedule":
+if section == "Class Schedule":
     class_schedule.show()
 
-elif section == "Lost & Found":
-    lost_found.show()
-
-elif section == "Buy & Sell":
-    buy_sell.show()
+elif section == "Mess Menu":
+    mess.show()
 
 elif section == "Notices / Events":
     notices.show()
@@ -39,11 +34,20 @@ elif section == "Notices / Events":
 elif section == "Academic Resources":
     academic_resources.show()
 
+elif section == "Opportunities":
+    opportunities.show()
+
 elif section == "College Contacts":
     college_contacts.show()
 
-elif section == "Opportunities & Updates":
-    opportunities.show()
+elif section == "Task Manager":
+    task.show()
 
 elif section == "Chatbot":
     chatbot.show()
+
+elif section == "Lost & Found":
+    lost_found.show()
+
+elif section == "Buy & Sell":
+    buy_sell.show()
