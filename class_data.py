@@ -122,51 +122,117 @@ CLASS_SCHEDULE_DATA = {
     # B.TECH 5TH SEMESTER
     # ----------------------------------------------------------------------
     "B.Tech 5th Sem CSE": {
-        "MON": [ {"time": "11:01-12:55", "course": "CS2 501 (P)", "room": "CR03", "faculty": "DB"} ],
-        "TUE": [],
-        "WED": [ {"time": "1:25-2:15", "course": "CS2 501", "room": "NAB", "faculty": "DB"} ],
-        "THU": [ {"time": "11:01-12:55", "course": "CS2 501 (P)", "room": "CR03", "faculty": "DB"} ],
-        "FRI": [ {"time": "1:25-2:15", "course": "CS2 501", "room": "NAB", "faculty": "DB"} ],
-        "SAT": [],
+        "MON": [],
+        "TUE": [
+            {"time": "11:05-12:50", "course": "CSC 502", "room": "302", "faculty": "OB"},
+            {"time": "2:15-4:55", "course": "CSC 511", "room": "(201,202,207)", "faculty": "(NG/SS,SHI)"},
+        ],
+        "WED": [ 
+            {"time": "9:15-11:00", "course": "CSC 501", "room": "302", "faculty": "SHI"},
+            {"time": "2:15-4:00", "course": "ECC 502", "room": "G02", "faculty": "DN"}
+        ],
+        "THU": [ 
+            {"time": "10:10-12:50", "course": "CSC 591 (PROJECT-IA)", "room": "", "faculty": ""},
+        ],
+        "FRI": [ 
+            {"time": "9:15-11:55", "course": "ECC 512", "room": "(201,202,207)", "faculty": "(DPC/BS/SHB,RB)"},
+            {"time": "12:00-12:50", "course": "ECC 502", "room": "302", "faculty": "DN"},
+            {"time": "2:15-4:00", "course": "CSC 502", "room": "302", "faculty": "OB"},
+            {"time": "4:05-5:50", "course": "CSC 501", "room": "302", "faculty": "SHI"},
+        ],
+        "SAT": [
+            {"time": "9:15-11:00", "course": "HUC 501", "room": "302", "faculty": "FU"},
+            {"time": "11:05-12:50", "course": "ECC 511", "room": "302", "faculty": "DD"},
+            {"time": "2:15-3:05", "course": "CSC 501", "room": "302", "faculty": "FU"},
+            {"time": "3:10-4:00", "course": "CSC 511", "room": "302", "faculty": "DD"},
+        ],
     },
     "B.Tech 5th Sem ECE": {
-        "MON": [ {"time": "11:01-12:55", "course": "ECL 501 (P)", "room": "CR03", "faculty": "SRG"} ],
-        "TUE": [],
-        "WED": [ {"time": "1:25-2:15", "course": "ECL 501", "room": "NAB", "faculty": "SRG"} ],
-        "THU": [ {"time": "11:01-12:55", "course": "ECL 501 (P)", "room": "CR03", "faculty": "SRG"} ],
-        "FRI": [ {"time": "1:25-2:15", "course": "ECL 501", "room": "NAB", "faculty": "SRG"} ],
-        "SAT": [],
+        "MON": [],
+        "TUE": [
+            {"time": "11:05-12:50", "course": "CSC 501", "room": "402", "faculty": "PC"},
+            {"time": "2:15-4:55", "course": "ECC 511", "room": "G05", "faculty": "(AG/BS,RB)"},
+        ],
+        "WED": [ 
+            {"time": "9:15-11:00", "course": "EEC 501", "room": "305", "faculty": "ARA"},
+            {"time": "11:05-12:50", "course": "ECC 502", "room": "305", "faculty": "DN"},
+            {"time": "2:15-4:00", "course": "ECC 501", "room": "305", "faculty": "PC"}
+        ],
+        "THU": [ 
+            {"time": "10:10-12:50", "course": "ECC 591 (PROJECT-IA)", "room": "", "faculty": ""},
+        ],
+        "FRI": [ 
+            {"time": "9:15-11:00", "course": "EEC 501", "room": "402", "faculty": "ARA"},
+            {"time": "11:05-11:55", "course": "ECC 502", "room": "305", "faculty": "DN"},
+            {"time": "2:15-4:55", "course": "ECC 512", "room": "(201,207)", "faculty": "(AG/DPC,DN)"},
+        ],
+        "SAT": [
+            {"time": "9:15-11:00", "course": "HUC 511", "room": "305", "faculty": "DD"},
+            {"time": "11:05-12:50", "course": "ECC 501", "room": "305", "faculty": "FU"},
+            {"time": "2:15-3:05", "course": "CSC 511", "room": "305", "faculty": "DD"},
+            {"time": "3:10-4:00", "course": "CSC 501", "room": "305", "faculty": "FU"},
+        ],
     },
 
     # ----------------------------------------------------------------------
     # B.TECH 7TH SEMESTER
     # ----------------------------------------------------------------------
     "B.Tech 7th Sem CSE": {
-        "MON": [ {"time": "10:00-11:00", "course": "CSP 701, GDL", "room": "CR04", "faculty": "DE"} ],
+        "MON": [ 
+            {"time": "10:10-12:50", "course": "CSC 711", "room": "(201,202,207)", "faculty": "(MS/MD,OB)"},
+            {"time": "2:15-4:00", "course": "CSE 722", "room": "G01", "faculty": "DB"},
+            {"time": "4:05-5:50", "course": "CSE 730", "room": "G01", "faculty": "SP"},
+        ],
         "TUE": [
-            {"time": "11:01-12:55", "course": "CSL 711 (P)", "room": "CR04", "faculty": "DR"},
-            {"time": "3:05-4:05", "course": "CSP 701, GDL", "room": "CR04", "faculty": "DE"},
+            {"time": "9:15-11:00", "course": "CSE 737/CSE 740", "room": "302/402", "faculty": "SHI/IM"},
+            {"time": "11:05-12:50", "course": "CSE 733", "room": "305", "faculty": "SCH"},
+            {"time": "2:15-3:05", "course": "CSC 701", "room": "G02", "faculty": "OB"},
+            {"time": "3:10-4:00", "course": "CSE 722", "room": "305", "faculty": "DB"},
+            {"time": "4:05-5:50", "course": "CSE 736", "room": "302", "faculty": "BB"},
         ],
-        "WED": [ {"time": "2:15-3:05", "course": "CSL 711", "room": "CR04", "faculty": "DR"} ],
+        "WED": [ 
+            {"time": "11:05-12:50", "course": "CSC 701", "room": "302", "faculty": "OB"},
+            {"time": "2:15-4:00", "course": "CSC 702", "room": "302", "faculty": "IM"},
+            {"time": "4:05-4:55", "course": "CSE 730", "room": "302", "faculty": "SP"},
+            {"time": "5:00-5:50", "course": "CSE 733", "room": "302", "faculty": "SCH"},
+        ],
         "THU": [
-            {"time": "1:25-2:15", "course": "CSL 711", "room": "CR04", "faculty": "DR"},
-            {"time": "3:05-4:05", "course": "CSP 701, GDL", "room": "CR04", "faculty": "DE"},
+            {"time": "10:10-12:50", "course": "CSC 791(PROJECT-IIA)", "room": "", "faculty": ""},
+            {"time": "2:15-4:55", "course": "CSC 791(PROJECT-IIA)", "room": "", "faculty": ""},
         ],
-        "FRI": [ {"time": "11:01-12:55", "course": "CSL 711 (P)", "room": "CR04", "faculty": "DR"} ],
+        "FRI": [ 
+            {"time": "9:15-10:05", "course": "CSE 736", "room": "302", "faculty": "BB"},
+            {"time": "10:10-11:00", "course": "CSE 737", "room": "305", "faculty": "SHI"},
+            {"time": "12:00-12:50", "course": "CSE 740", "room": "305", "faculty": "IM"},
+            {"time": "4:05-4:55", "course": "CSC 702", "room": "G01", "faculty": "IM"},     
+        ],
         "SAT": [],
     },
     "B.Tech 7th Sem ECE": {
-        "MON": [ {"time": "10:00-11:00", "course": "ECP 701", "room": "CR04", "faculty": "GLM"} ],
+        "MON": [ 
+            {"time": "9:15-11:00", "course": "ECC 702", "room": "G02", "faculty": "ARA"},
+            {"time": "11:05-11:00", "course": "ECC 701", "room": "G02", "faculty": "RS"},
+            {"time": "2:15-3:05", "course": "ECE 732", "room": "305", "faculty": "RS"},
+            {"time": "3:10-4:55", "course": "ECE 733", "room": "305", "faculty": "SPA"},
+        ],
         "TUE": [
-            {"time": "11:01-12:55", "course": "ECL 711 (P)", "room": "CR04", "faculty": "SP"},
-            {"time": "3:05-4:05", "course": "ECP 701", "room": "CR04", "faculty": "GLM"},
+            {"time": "10:10-11:00", "course": "ECE 728", "room": "305", "faculty": "RB"},
+            {"time": "2:15-3:05", "course": "ECC 701", "room": "305", "faculty": "RS"},
+            {"time": "3:10-4:00", "course": "ECE 733", "room": "402", "faculty": "SPA"},
         ],
-        "WED": [ {"time": "2:15-3:05", "course": "ECL 711", "room": "CR04", "faculty": "SP"} ],
+        "WED": [ 
+            {"time": "10:10-12:50", "course": "ECC 791(PROJECT-IIA)", "room": "", "faculty": ""},
+            {"time": "2:15-4:55", "course": "ECC 791(PROJECT-IIA)", "room": "", "faculty": ""},
+        ],
         "THU": [
-            {"time": "1:25-2:15", "course": "ECL 711", "room": "CR04", "faculty": "SP"},
-            {"time": "3:05-4:05", "course": "ECP 701", "room": "CR04", "faculty": "GLM"},
+            {"time": "9:15-11:00", "course": "ECC 702", "room": "305", "faculty": "ARA"},
+            {"time": "11:05-12:50", "course": "ECE 728", "room": "305", "faculty": "RB"},
+            {"time": "2:15-4:55", "course": "ECC 711", "room": "202", "faculty": "(XXX,SPA)"},
         ],
-        "FRI": [ {"time": "11:01-12:55", "course": "ECL 711 (P)", "room": "CR04", "faculty": "SP"} ],
+        "FRI": [ 
+            {"time": "11:05-12:50", "course": "ECE 732", "room": "402", "faculty": "RS"},
+            {"time": "2:15-4:55", "course": "ECC 712", "room": "202", "faculty": "(SJP,ARA)"},
+        ],
         "SAT": [],
     },
     
@@ -175,11 +241,23 @@ CLASS_SCHEDULE_DATA = {
 
 # Faculty and Code Lists
 FACULTY_LIST = {
-    "KK": "Kaushik K. Mukherjee", "SUM": "Suman Das", "DN": "Dharm Narayan", "KR": "Krishanu Rakshit",
-    "SWA": "Swarup K. Panda", "KC": "Koushik Chandra", "GMS": "Goutam M. Sutar", "RK": "Ranjit K. Mondal",
-    "DR": "Dipanwita Roy", "DE": "Debajyoti Das", "SP": "Souvik Pal", "GLM": "G. L. M. D. L. Varma",
-    "AB": "A. B. Ghosh", "SS": "Sanjit Saha", "SR": "Swarup R. Mandal", "SRG": "Subhrajyoti Roy Goswami",
-    "SC": "Sukanta Chatterjee", "DB": "Debabrata Bhaumik", "SB": "Sutripto Basak", 
-    "SKD": "S. K. Das (Assumed)", "SR": "S. R. Mandal (Assumed)", "AB": "A. B. Ghosh (Assumed)", 
+    "IM": "Dr.Imon Mukherjee", "SHI": "Dr.SK Hafizul Islam", "SP": "Dr.Sanjoy Pratihar", "OB": "Dr.Oishila Bandyopadhya",
+    "SCH": "Dr.Sanjay Chatterji", "DB": "Dr.Debasish Bera", "ARA": "Dr.Amit Ranjan Azad", "BK": "Dr.Bapi Kar",
+    "UD": "Dr.Uma Das", "DN": "Dr. Dalia Nandi", "AL": "Dr.Anirban Lakshman", "RS": "Dr.Rinky Sha",
+    "PC": "Dr.Pratik Chakraborty", "BB": "Dr.Bhaskar Biswas", "SUM": "Dr.Sudeshna Mondal", "SPA": "Dr.Soumen Pandit",
 }
+
+GUEST_FACULTY_LIST = {
+    "DD": "Dr.Debasish Dutta", "FU": "Dr.Furquan Uddin", "RK": "Dr.Rasheed K", "SAS": "Mr.Sabyasachi Sen",
+    "SMA": "Mr.Sukanta Mazumdar", "MD": "Ms.Mukta Debnath", "SB": "Mrs.Shweta Basu", "SRC": "Ms.Sreyoshi Roy Chowdhury",
+}
+
+Research_Scholar = {
+    "AD": "Arijit Das", "AG": "Abhishek Ghosh", "AP": "Amritesu Pal", "AS": "Atashi Saha",
+    "BS": "Bijaylakshmi Singh", "DKN": "Dilkashan Neyaz", "DPC": "Debarpita Paul Choudhury", "DS": "Debmani Saha",
+    "JT": "Jaob Tauro", "MD": "Madhuchhanda Dasgupta", "MS": "Mou Sarkar", "ND": "Nikita Dhar",
+    "NG": "Nilkantha Garain", "PB": "Pritam Biswas", "SHB": "Shikha Biswas", "SJM": "Suvojit Mukhopadhyay",
+    "SJP": "Subhajit Paul", "SPK": "Saptaparna Kundu", "SR": "Sabnur Rahaman", "SS": "Suman Som",
+}
+
 ALL_DAYS = ["MON", "TUE", "WED", "THU", "FRI", "SAT"]
